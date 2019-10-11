@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    <title>movingcar</title>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+    <button id="moveLeft">Move Left</button>
+    <button id="moveRight">Move Right</button>
+    <div id="b" style="position:relative;"><img id="img" src="automobile.png"></div>
+
+    <script>
+        $(document).ready(function() {
+
+            $('#moveRight').click(function() {
+                $('#b').animate({
+                    left: 500,
+                });
+            });
+            $('#moveLeft').click(function() {
+                $('#b').animate({
+                    left: 0,
+                });
+            });
+
+        });
+    </script>
+
+</body>
+
+
+</html>
